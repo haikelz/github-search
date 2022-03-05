@@ -39,7 +39,7 @@ export default function UserInfo() {
            <button onClick={() => navigate('/')} className='px-4 py-1 font-medium mx-1 my-4 bg-gray-600 rounded text-gray-200'>Back</button>
            {user && user?.map((uinfo, i) => (
                <div key={i} className="flex justify-center md:flex-row md:px-0 px-4 flex-col gap-10">
-                   <img src={uinfo.avatar_url} className='w-[350px] border-4 border-teal-400 md:mx-0 mx-auto'/>
+                   <img src={uinfo.avatar_url} className='w-[350px] border-4 border-teal-400 md:mx-0 mx-auto' alt="Avatar"/>
                    <div className='text-lg px-3 leading-10'>
                        <h1 className='text-3xl pb-4'>{uinfo?.name}</h1>
                        <h1><span className='text-teal-400'>ID: </span>{uinfo?.id}</h1>
