@@ -6,6 +6,7 @@ import UserInfo from './Routes/UserInfo';
 
 export default function App() {
   return (
+    <Router>
     <div className='min-h-screen bg-black'>
       <div className='container text-gray-50 py-3'>
         <Logo />
@@ -15,5 +16,6 @@ export default function App() {
         </Routes>
       </div>
     </div>
+    </Router>
   )
 }
