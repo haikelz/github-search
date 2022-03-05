@@ -45,10 +45,10 @@ export default function UserInfo() {
                        <h1><span className='text-teal-400'>ID: </span>{uinfo?.id}</h1>
                        <h1><span className='text-teal-400'>Username: </span>{uinfo?.login}</h1>
                        <h1><span className='text-teal-400 '>Location: </span>{uinfo?.location}</h1>
-                       <h1><span className='text-teal-400 '>Blog: </span><a className='text-blue-500 hover:text-blue-700' href={uinfo?.blog} target='_blank'>{uinfo?.blog}</a></h1>
+                       <h1><span className='text-teal-400 '>Blog: </span><a className='text-blue-500 hover:text-blue-700' href={uinfo?.blog} rel="noreferrer" target='_blank'>{uinfo?.blog}</a></h1>
                        <h1><span className='text-teal-400 '>Followers: </span>{uinfo?.followers}</h1>
                        <h1><span className='text-teal-400 '>Public Repos: </span>{uinfo?.public_repos}</h1>
-                       <a href={uinfo?.html_url} target='_blank' className='text-gray-200 font-semibold rounded cursor-pointer px-4 py-1 bg-gray-600 my-3 tracking-wide'>Visit</a>
+                       <a href={uinfo?.html_url} target='_blank' rel="noreferrer" className='text-gray-200 font-semibold rounded cursor-pointer px-4 py-1 bg-gray-600 my-3 tracking-wide'>Visit</a>
                    </div>
                </div>
            ))}
