@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './components/Logo';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Users from './Routes/Users';
 import UserInfo from './Routes/UserInfo';
 

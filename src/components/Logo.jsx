@@ -1,4 +1,6 @@
-export default function Logo() {
+import React from 'react'; 
+
+const Logo = () => {
     return (
         <div className="flex border-b border-gray-500 pb-2 justify-center items-center">
             <img src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" alt="Github Logo" className="w-24 rounded-full"/>
@@ -6,3 +8,5 @@ export default function Logo() {
         </div>
     )
 }
+
+export default Logo; 

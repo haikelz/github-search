@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Tabs({type, setType}) {
     return (
         <div className='flex border-b pb-4 gap-6 mt-[10%] mb-6 justify-center md:text-xl'>

@@ -1,11 +1,9 @@
-import React from "react";
-
-const Repo = ({repos}) => {
+export default function Repo({repos}) {
     return (
         <>
           {repos.map((repo, idx) => (
               <div key={idx} className='bg-gray-900 p-3 leading-8'>
-                  <a href={repo.html_url} target='_blank' className="break-words font-semibold hover:underline hover:text-blue-500">
+                  <a href={repo.html_url} target='_blank' rel='noreferrer' className="break-words font-semibold hover:underline hover:text-blue-500">
                        {repo.full_name}
                   </a>
 
@@ -19,5 +17,3 @@ const Repo = ({repos}) => {
         </>
     )
 }
-
-export default Repo;

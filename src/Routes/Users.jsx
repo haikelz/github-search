@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
-import UsersContainer from "../components/UsersContainer";
-import Loading from "../components/Loading";
+import UsersContainer from "components/UsersContainer";
+import Loading from "components/Loading";
 
-export default function Users() {
+const Users = () => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(null);
 
@@ -46,3 +46,5 @@ export default function Users() {
         </div>
     );
 };
+
+export default Users; 
